@@ -2,6 +2,21 @@ spring:
   application:
     name: stadium
 
+  datasource:
+    url: jdbc:postgresql://localhost:5432/stadiumdb
+    username: root
+    password: root
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update   # create | create-drop | update | validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
 retrofit:
   api-football-connector:
     url: https://apiv3.apifootball.com/
