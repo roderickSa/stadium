@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: stadium
+
+retrofit:
+  api-football-connector:
+    url: https://apiv3.apifootball.com/
+    api-key: ebf4794ab2981dfbb0fd8ac4278a48922a8dba87d5295126b17a510a5224bee2
+    read-timeout: 5000
+    connection-timeout: 3000
