@@ -45,6 +45,8 @@ public class GlobalExceptionHandler {
             case "AF-500" -> HttpStatus.SERVICE_UNAVAILABLE;
             case "STADIUM-404" -> HttpStatus.NOT_FOUND;
             case "ZONE-404" -> HttpStatus.NOT_FOUND;
+            case "USERNAME-409" -> HttpStatus.CONFLICT;
+            case "EMAIL-409" -> HttpStatus.CONFLICT;
             default -> HttpStatus.BAD_GATEWAY;
         };
 
